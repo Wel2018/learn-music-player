@@ -55,7 +55,7 @@
 
 ## 🧱 项目架构
 
-![](assets/Architecture.png)
+![](assets/architecture.png)
 
 ## 🔥 开发环境
 
