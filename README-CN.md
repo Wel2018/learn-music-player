@@ -11,70 +11,69 @@
 <img src="https://img.shields.io/github/commit-activity/m/Wel2018/learn-music-player"/>
 </p>
 
-📝 [Blog](https://juejin.cn/user/2594503171769720/posts)
-| 📄 [Documentation](doc/overview.md)
-| 💬 [FAQ](FAQ.md)
+📝 [博客主页](https://juejin.cn/user/2594503171769720/posts)
+| 📄 [开发文档](doc/overview.md)
+| 💬 [常见问题](FAQ.md)
 | ⁉ [Issues](https://github.com/Wel2018/learn-music-player/issues)
-| 🌍 [Roadmap](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62)
+| 🌍 [项目规划](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62)
 
-Create your own music App from scratch.
+从零开始，使用微服务架构、前后端分离的开发技术的现代化音乐应用。
 
-## 📖 Table of Contents
+## 📖 目录
 
 - [Learn Music Player](#learn-music-player)
-  - [📖 Table of Contents](#-table-of-contents)
-  - [💻 Client](#-client)
-  - [✨ Features](#-features)
-  - [🧱 Architecture](#-architecture)
-  - [🔥 Technology Stack](#-technology-stack)
-  - [⛏️ Build](#️-build)
-  - [📦 Related Efforts](#-related-efforts)
-  - [📃 Recommended References](#-recommended-references)
-  - [🍻 Contributing](#-contributing)
-  - [📝 License](#-license)
+  - [📖 目录](#-目录)
+  - [💻 客户端示例](#-客户端示例)
+  - [✨ 功能](#-功能)
+  - [🧱 项目架构](#-项目架构)
+  - [🔥 开发环境](#-开发环境)
+  - [⛏️ 构建](#️-构建)
+  - [📦 相似项目](#-相似项目)
+  - [📃 推荐参考项目](#-推荐参考项目)
+  - [🍻 贡献方式](#-贡献方式)
+  - [📝 开源协议](#-开源协议)
 
-## 💻 Client 
+
+## 💻 客户端示例 
 
 ![image](doc/assets/myui.png)
 
-**note**: 
-Due to limited personal energy, the initial focus of the project is to create *Restful API*. 
-The implementation of temporary client of this project use [MrRainbowYoo/Music_Player](https://github.com/MrRainbowYoo/Music_Player) project. Besides, some high quality client implementations are list in [recommended-references](#recommended-references) section. When all API and supporting documents are completed, the client supporting the project, including Qt and Electron versions, will be provided. Specific project planning see 🌍 [roadmap](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62).
+>   注：由于个人精力有限，该项目初期重点是创建 Restful API，暂时客户端使用 [MrRainbowYoo/Music_Player](https://github.com/MrRainbowYoo/Music_Player) 项目提供的实现，此外该项目还列举了一份高质量客户端实现 [清单](#推荐参考项目)。所有接口和配套文档完善后，再提供该项目配套的客户端（包括 Qt、Electron 版本），具体项目规划见 🌍 [项目规划](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62)。
 
-## ✨ Features
+## ✨ 功能
 
-This project use Python, C++ server to implement the common interface in [netease-cloudmusic api](https://neteasecloudmusicapi.vercel.app/#/?id=neteasecloudmusicapi) document. Expected features are:
+该项目会使用 Pyhon、C++ 实现 [网易云音乐 NodeJS 版 API](https://neteasecloudmusicapi.vercel.app/#/?id=neteasecloudmusicapi) 文档中的部分常用接口，并部署自己的数据库，预期功能有：
 
-- Personal account, favorites, comments, etc
-- Recommend playlists, singles, and MV based on users' preferences
-- Provides switching between online and offline modes
-- Support Docker deployment
-- Provide mid-stage system to manage music playlists, MV, users, etc
+- 个人账号登录、收藏、评论等
+- 支持根据用户喜好推荐歌单、单曲、MV等
+- 提供在线、离线模式切换
+- 支持 Docker 部署
+- 提供中台系统管理音乐歌单、MV、用户等
 - ...
 
-For more details, see [Roadmap](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62). 
+详情见 🌍 [项目规划](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-e4954fa05443#5eb25c4c-b971-4294-bc79-1f97155d6c62)。
 
-## 🧱 Architecture
+## 🧱 项目架构
 
 ![](assets/Architecture.png)
 
-## 🔥 Technology Stack
+## 🔥 开发环境
 
-- Editor: Visual Studio Code
-- Language：C++, Python 
-- Database：MySQL, Redis
-- Access layer：Nginx
-- Client：Vue.js
+- 编辑器: vscode
+- 语言：C++、Python
+- 存储：MySQL、Redis
+- 接入层：Nginx
+- 客户端：Vue.js
 
-## ⛏️ Build 
+## ⛏️ 构建
 
-The project supports traditional builds as well as Docker deployments. For more details, see [build](build.md).
+该项目支持传统方式构建，同时也支持 Docker 部署，详情见 [build](build.md)。
 
-## 📦 Related Efforts
+## 📦 相似项目
 
 -   [Binaryify/NeteaseCloudMusicApi: 网易云音乐 Node.js API service (github.com)](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
-## 📃 Recommended References
+## 📃 推荐参考项目
 
 - [MrRainbowYoo/Music_Player: 🎵基于Vue的在线音乐播放器，部分UI参考网易云音乐，支持在线演示。本项目仅供参考学习。 (github.com)](https://github.com/MrRainbowYoo/Music_Player)
 - [Yin-Hongwei/music-website: 🎧 Vue + SpringBoot + MyBatis 音乐网站 (github.com)](https://github.com/Yin-Hongwei/music-website) 
@@ -103,14 +102,15 @@ The project supports traditional builds as well as Docker deployments. For more 
 - …
 
 
-## 🍻 Contributing
+## 🍻 贡献方式
 
-Welcome all friends who are interested in Music-Player to ⭐ star this project. Your support is the biggest motivation for me to continue updating!
-Due to my level and energy are limited, the blogs and related code may have inadequacies and errors, welcome to ask questions and discussion in ⁉ [Issues](https://github.com/Wel2018/learn-cpp-rezero/issues), also welcome to **Pull Requests** when you make sure which are not already open.
+欢迎感兴趣的朋友 ⭐ star 该项目，您的支持是我继续更新下去的最大动力！由于本人水平、精力有限，文档、博客和相关代码可能存在疏漏之处，
+欢迎在 ⁉ [Issues](https://github.com/Wel2018/learn-music-player/issues) 中提问和讨论，
+也欢迎有能力的大佬直接 Pull Request。
 
->   ⚠ Note: Due to the consideration of music copyright and relevant laws and regulations, the relevant access code of NetEase Cloud Music has been deleted. If you find any other problems, please refer to Issues. Thank you!
+> ⚠ 说明：由于考虑到音乐版权和相关法律法规，网易云音乐的相关访问代码已删除。如发现其他问题，还请在 Issues 中指出，谢谢！
 
-## 📝 License  
+## 📝 开源协议
 
-MIT License (for more details, see the [license file](LICENSE))
+[MIT](LICENSE)
 
