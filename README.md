@@ -56,7 +56,7 @@ For more details, see [Roadmap](https://flowus.cn/share/fb7f5722-aedb-494c-a0e7-
 
 ## 🧱 Architecture
 
-![](assets/Architecture.png)
+![](assets/architecture.png)
 
 ## 🔥 Technology Stack
 
